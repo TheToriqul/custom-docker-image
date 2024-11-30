@@ -4,6 +4,7 @@ import platform
 import socket
 import datetime
 import psutil
+import flask
 
 app = Flask(__name__)
 
@@ -108,7 +109,7 @@ def home():
         memory_usage=memory_usage,
         uptime=uptime,
         python_version=platform.python_version(),
-        flask_version=Flask.__version__
+        flask_version=flask.__version__
     )
 
 @app.route('/health')
@@ -137,7 +138,7 @@ def info():
         },
         'versions': {
             'python': platform.python_version(),
-            'flask': Flask.__version__
+            'flask': flask.__version__
         }
     })
 
