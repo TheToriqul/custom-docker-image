@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+*.egg-info/
+.eggs/
+*.egg
+.pytest_cache/
+.coverage
+.env
+.venv
+venv/
+ENV/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+
+# Git
+.git/
+.gitignore
+
+# Logs
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Docker
+.docker/
+*.dockerfile
+
+# Project specific
+install.sh
+reference-commands.md
+README.md
